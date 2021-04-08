@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "episodes",
+  "info": {
+    "name": "Episode",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "number": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "unique": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "overcastSlug": {
+      "type": "string",
+      "unique": true
+    },
+    "releaseDate": {
+      "type": "date",
+      "required": true
+    },
+    "questions": {
+      "collection": "question",
+      "via": "episode"
+    }
+  }
+}

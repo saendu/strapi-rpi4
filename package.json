@@ -1,8 +1,8 @@
 {
-  "name": "askatp-cms",
+  "name": "strapi-base",
   "private": true,
   "version": "1.0.0",
-  "description": "The CMS for askatp.fm",
+  "description": "The Strapi Base",
   "scripts": {
     "dev": "strapi develop",
     "develop": "strapi develop",
@@ -12,16 +12,18 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "knex": "<0.20.0",
-    "pg": "^8.5.1",
-    "strapi": "3.5.3",
-    "strapi-admin": "3.5.3",
-    "strapi-plugin-content-manager": "3.5.3",
-    "strapi-plugin-content-type-builder": "3.5.3",
-    "strapi-plugin-email": "3.5.3",
-    "strapi-plugin-graphql": "3.5.3",
-    "strapi-plugin-users-permissions": "3.5.3",
-    "strapi-connector-mongoose": "3.5.3"
+    "strapi": "3.5.4",
+    "strapi-admin": "3.5.4",
+    "strapi-plugin-content-manager": "3.5.4",
+    "strapi-plugin-content-type-builder": "3.5.4",
+    "strapi-plugin-email": "3.5.4",
+    "strapi-plugin-graphql": "3.5.4",
+    "strapi-plugin-users-permissions": "3.5.4",
+    "strapi-plugin-upload": "3.5.4",
+    "strapi-connector-mongoose": "3.5.4"
+  },
+  "resolutions": {
+    "sharp": "0.28.1"
   },
   "author": {
     "name": "Brendon Reyell"
